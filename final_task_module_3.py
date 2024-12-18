@@ -1,9 +1,9 @@
 def unpacking(*value):
     value_sum = 0
     for i in value:
-        # if i == None:
-        #     return value_sum
-        if isinstance(i, (int, float)):
+        if i == None:
+            continue
+        elif isinstance(i, (int, float)):
             value_sum += i
         elif isinstance(i, str):
             value_sum += len(i)
